@@ -1,0 +1,231 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    MENUITEM "&Insert",                     65535
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "A&bout",                      ID_HELP_ABOUT
+        MENUITEM "H&elp",                       ID_HELP_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 215, 73
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maalimat Kiryy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,52,50,14
+    GROUPBOX        "MAKSAT",IDC_STATIC,20,7,69,56
+    CONTROL         "Kiymili bar",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,25,
+                    20,47,10
+    CONTROL         "Kiymili jok",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,26,
+                    41,46,10
+    LTEXT           "Aralik (m):",IDC_STATIC,105,16,32,12
+    EDITTEXT        IDC_EDIT2,145,13,53,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 217, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PROGRAMMAGA KIRYY"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,60,50,14
+    COMBOBOX        IDC_KURAL,102,25,101,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Kuraldi tandaniz :",IDC_STATIC,102,14,75,9
+    GROUPBOX        "Rejimdi tandaniz",IDC_STATIC,19,12,69,50
+    CONTROL         "Terezelik",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,27,24,
+                    45,10
+    CONTROL         "Toluk Ekran",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,27,
+                    39,55,10
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 141, 94
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Koshumcha Maalimat Kiryy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,73,50,14
+    COMBOBOX        IDC_COMBO1,66,17,55,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ildamdik (m/s) :",IDC_STATIC,13,42,48,10
+    EDITTEXT        IDC_EDIT1,66,39,54,14,ES_AUTOHSCROLL
+    LTEXT           "Bagiti :",IDC_STATIC,40,20,22,8
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 247, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Avtor Jonundo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,69,50,14
+    CTEXT           "KTU ""MANAS""   Engineering Faculty ",IDC_STATIC,16,27,
+                    165,17,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC,13,7,171,76
+    LTEXT           "Kojokanova A.B.       Copyright 2007.",IDC_STATIC,41,68,
+                    120,9
+    LTEXT           "Grafikalik Navigazionduk Programma 2.0",IDC_STATIC,35,
+                    14,128,12
+    CTEXT           "Computer Engineering Department",IDC_STATIC,20,48,157,
+                    17,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 209, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Help"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,152,69,50,14
+    LTEXT           "[up]       --    zoom ""+""",IDC_STATIC,7,10,129,8
+    LTEXT           "[Y]        --    unu jok",IDC_STATIC,7,35,129,8
+    LTEXT           "[down]  --    zoom ""-""",IDC_STATIC,7,22,129,8
+    LTEXT           "[right]        --    aylandiruunu toktotuu",IDC_STATIC,
+                    7,61,129,8
+    LTEXT           "[N]        --    unu bar",IDC_STATIC,7,48,129,8
+    LTEXT           "[left]          --    aylandiruunu bashtatuu",
+                    IDC_STATIC,7,73,129,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        VERTGUIDE, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        VERTGUIDE, 27
+        VERTGUIDE, 102
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        VERTGUIDE, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
